@@ -116,6 +116,7 @@ header .main-img {
   width: 100%;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   z-index: 0;
 }
 header .main-img-shadow {
