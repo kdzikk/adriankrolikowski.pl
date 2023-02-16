@@ -7,8 +7,8 @@
 }
 
 :root {
-  --fontcolor: rgb(205, 205, 205);
-  --fonthovercolor: rgb(247, 247, 247);
+  --fontcolor: rgb(200, 200, 200);
+  --fonthovercolor: rgb(255, 255, 255);
   font-size: 16px;
   --swiper-navigation-size: 30px;
   --swiper-navigation-color: rgb(223, 223, 223);
@@ -100,10 +100,13 @@ nav {
     font-size: 1.2rem;
     margin: 0.5rem;
     color: var(--fontcolor);
+    transition: 0.3s;
+    background-color: none;
   }
   .nav-link:hover,
   .active {
     color: var(--fonthovercolor);
+    font-size: 1.4rem;
   }
 }
 
@@ -114,12 +117,12 @@ header {
 
   .main-img {
     position: relative;
-    background-image: url("/images/photos/przerobione/background.webp");
+    background-image: url("/images/photos/przerobione/background.jpg");
     height: 95vh;
     width: 100%;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+    // background-attachment: fixed;
     z-index: 0;
   }
 
