@@ -220,13 +220,6 @@ header {
 }
 
 // PORTFOLIO ----------------------------------------------
-.portfolio {
-  .container {
-    h2 {
-      text-align: right;
-    }
-  }
-}
 .swiper {
   .swiper-wrapper {
     .swiper-slide {
@@ -274,19 +267,62 @@ header {
   }
 }
 
-.iframe-container {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-  height: 0;
-  margin: 70px 0;
-}
-.iframe-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.portfolio-yt {
+  .container {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .image-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+      transition: height 0.2s;
+      z-index: 1;
+    }
+
+    .image-container:hover .overlay {
+      height: 100%;
+      transform: scale(0.98);
+    }
+
+    .image-container img {
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: transform 0.2s;
+    }
+
+    .image-container:hover img {
+      transform: scale(0.98);
+    }
+    .text-image {
+      position: absolute;
+      bottom: 50%;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 2rem;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.2s;
+      z-index: 2;
+    }
+    .image-container:hover .text-image {
+      opacity: 1;
+    }
+  }
 }
 
 // CONTACT
@@ -311,9 +347,6 @@ header {
 
 .contact {
   .container {
-    h2 {
-      text-align: left;
-    }
     .contact-box {
       i:hover {
         color: var(--fonthovercolor);
