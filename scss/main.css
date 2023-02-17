@@ -233,10 +233,6 @@ header .bounce-top {
   color: black;
 }
 
-.portfolio-yt .container img {
-  width: 100%;
-  height: 100%;
-}
 .portfolio-yt .container .image-container {
   position: relative;
   display: inline-block;
@@ -246,40 +242,31 @@ header .bounce-top {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 0;
-  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
   transition: height 0.2s;
   z-index: 1;
 }
 .portfolio-yt .container .image-container:hover .overlay {
   height: 100%;
-  transform: scale(0.98);
 }
 .portfolio-yt .container .image-container img {
   display: block;
   width: 100%;
-  height: auto;
-  transition: transform 0.2s;
-}
-.portfolio-yt .container .image-container:hover img {
-  transform: scale(0.98);
 }
 .portfolio-yt .container .text-image {
+  margin: 0;
   position: absolute;
   bottom: 50%;
   left: 50%;
   transform: translate(-50%, 50%);
-  color: white;
+  color: rgb(255, 255, 255);
   text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 2rem;
+  letter-spacing: 2.5px;
+  font-size: 1.3rem;
   text-align: center;
-  opacity: 0;
-  transition: opacity 0.2s;
-  z-index: 2;
-}
-.portfolio-yt .container .image-container:hover .text-image {
   opacity: 1;
+  z-index: 2;
 }
 
 .contact .container .contact-box h3 {
@@ -386,6 +373,10 @@ header .bounce-top {
     padding: 10px 0;
     font-size: 1.5rem;
   }
+  .portfolio-yt .container .text-image {
+    letter-spacing: 3px;
+    font-size: 1.7rem;
+  }
   .contact .container .contact-box h3 {
     font-size: 1.5rem;
   }
@@ -427,6 +418,30 @@ header .bounce-top {
   .portfolio .swiper .swiper-button-prev {
     display: block;
     width: calc(var(--swiper-navigation-size) / 60 * 27);
+  }
+  .portfolio-yt .container .overlay {
+    height: 0;
+    transition: height 0.2s;
+  }
+  .portfolio-yt .container .image-container:hover .overlay {
+    height: 100%;
+    transform: scale(0.98);
+  }
+  .portfolio-yt .container .image-container img {
+    width: 100%;
+    transition: transform 0.2s;
+  }
+  .portfolio-yt .container .image-container:hover img {
+    transform: scale(0.98);
+  }
+  .portfolio-yt .container .text-image {
+    letter-spacing: 2px;
+    font-size: 2rem;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  .portfolio-yt .container .image-container:hover .text-image {
+    opacity: 1;
   }
   .footer p {
     font-size: 0.85rem;
