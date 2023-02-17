@@ -419,15 +419,26 @@ header .bounce-top {
     display: block;
     width: calc(var(--swiper-navigation-size) / 60 * 27);
   }
+  .portfolio-yt .container .image-container {
+    position: relative;
+    display: inline-block;
+  }
   .portfolio-yt .container .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     height: 0;
+    background-color: rgba(0, 0, 0, 0.3);
     transition: height 0.2s;
+    z-index: 1;
   }
   .portfolio-yt .container .image-container:hover .overlay {
     height: 100%;
     transform: scale(0.98);
   }
   .portfolio-yt .container .image-container img {
+    display: block;
     width: 100%;
     transition: transform 0.2s;
   }
@@ -435,10 +446,18 @@ header .bounce-top {
     transform: scale(0.98);
   }
   .portfolio-yt .container .text-image {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: white;
+    text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 2rem;
+    text-align: center;
     opacity: 0;
     transition: opacity 0.2s;
+    z-index: 2;
   }
   .portfolio-yt .container .image-container:hover .text-image {
     opacity: 1;
