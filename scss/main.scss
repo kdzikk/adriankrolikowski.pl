@@ -87,18 +87,23 @@ h2 {
 // NAV
 
 nav {
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 3;
+  background-color: rgb(8, 8, 8);
+  z-index: 20;
   i {
     color: var(--fontcolor);
   }
 
+  .navbar-nav {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
   .nav-link {
+    margin: 0.5rem;
     text-transform: uppercase;
     text-align: center;
-    padding: 0.4rem;
+    // padding: 0.4rem;
     font-size: 1.2rem;
-    margin: 0.5rem;
     color: var(--fontcolor);
     transition: 0.3s;
     background-color: none;
@@ -503,10 +508,13 @@ header {
 @media (min-width: 992px) {
   .navbar {
     .container {
-      .nav-link {
-        padding: 0 8px;
-        margin: 0 8px;
-        font-size: 1.4rem;
+      .navbar-nav {
+        height: 3vh;
+        .nav-link {
+          padding: 0 8px;
+          margin: 0 8px;
+          font-size: 1.4rem;
+        }
       }
     }
   }

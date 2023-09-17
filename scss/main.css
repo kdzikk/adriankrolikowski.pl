@@ -87,18 +87,22 @@ h2 {
   }
 }
 nav {
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 3;
+  background-color: rgb(8, 8, 8);
+  z-index: 20;
 }
 nav i {
   color: var(--fontcolor);
 }
+nav .navbar-nav {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
 nav .nav-link {
+  margin: 0.5rem;
   text-transform: uppercase;
   text-align: center;
-  padding: 0.4rem;
   font-size: 1.2rem;
-  margin: 0.5rem;
   color: var(--fontcolor);
   transition: 0.3s;
   background-color: none;
@@ -387,7 +391,10 @@ header .bounce-top {
   }
 }
 @media (min-width: 992px) {
-  .navbar .container .nav-link {
+  .navbar .container .navbar-nav {
+    height: 3vh;
+  }
+  .navbar .container .navbar-nav .nav-link {
     padding: 0 8px;
     margin: 0 8px;
     font-size: 1.4rem;
