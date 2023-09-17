@@ -179,13 +179,13 @@ header {
     position: absolute;
     color: var(--fontcolor);
     font-size: 1.5rem;
-    bottom: 3%;
+    bottom: 7%;
     left: 50%;
     transform: translateX(-50%);
     padding: 10px;
   }
   .bounce-top {
-    animation: bounce-top 2s infinite both;
+    animation: bounce 1.5s infinite both;
   }
 }
 // ABOUTME -------------------------------------------------
@@ -442,7 +442,6 @@ header {
       }
       p {
         font-size: 1.3rem;
-        margin-left: 15px;
       }
       a {
         padding: 5px 15px;
@@ -453,7 +452,7 @@ header {
       }
     }
     .arrow {
-      font-size: 2.3rem;
+      font-size: 2.7rem;
     }
   }
   h2 {
@@ -517,7 +516,7 @@ header {
         font-size: 3rem;
       }
       p {
-        margin-right: 15px;
+        margin: 15px;
         font-size: 1.6rem;
       }
     }
@@ -623,12 +622,12 @@ header {
   header {
     .main-text {
       h1 {
-        font-size: 2.7rem;
+        font-size: 4rem;
+        padding-bottom: 1rem;
       }
 
       p {
-        // margin-right: 15px;
-        font-size: 1.2rem;
+        font-size: 2rem;
       }
     }
   }
@@ -708,5 +707,60 @@ header {
     transform: translateY(0);
     animation-timing-function: ease-out;
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(60px);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(60px);
+    opacity: 0;
+  }
+}
+
+@-o-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(60px);
+    opacity: 0;
+  }
+}
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(60px);
+    opacity: 0;
   }
 }
