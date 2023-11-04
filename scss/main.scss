@@ -99,10 +99,10 @@ nav {
     justify-content: center;
   }
   .nav-link {
-    margin: 0.5rem;
+    // margin: 1rem;
+    padding: 1.5rem;
     text-transform: uppercase;
     text-align: center;
-    // padding: 0.4rem;
     font-size: 1.2rem;
     color: var(--fontcolor);
     transition: 0.3s;
@@ -228,6 +228,10 @@ header {
 .swiper {
   .swiper-wrapper {
     .swiper-slide {
+      video {
+        width: 100%;
+        height: 500px;
+      }
       text-align: center;
       width: auto;
       img {
@@ -459,6 +463,9 @@ header {
     .arrow {
       font-size: 2.7rem;
     }
+  }
+  .swiper .swiper-wrapper .swiper-slide video {
+    height: 650px;
   }
   h2 {
     margin-top: 90px;
